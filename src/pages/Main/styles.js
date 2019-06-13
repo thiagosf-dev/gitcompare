@@ -5,10 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+`;
 
-  label {
-    color: #fff;
-  }
+export const ExampleText = styled.div`
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
 `;
 
 export const Form = styled.form`
@@ -16,7 +19,6 @@ export const Form = styled.form`
   width: 100%;
   max-width: 400px;
   display: flex;
-
   input {
     flex: 1;
     height: 55px;
@@ -25,10 +27,8 @@ export const Form = styled.form`
     font-size: 18px;
     color: #444;
     border-radius: 3px;
-
     border: ${props => (props.withError ? '2px solid #f00' : 0)};
   }
-
   button {
     width: 80px;
     height: 55px;
@@ -40,7 +40,6 @@ export const Form = styled.form`
     font-size: 20px;
     font-weight: bold;
     border-radius: 3px;
-
     &:hover {
       background: #52d89f;
     }
